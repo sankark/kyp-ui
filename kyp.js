@@ -8,7 +8,7 @@ var txt = "hello"
 var comment = {header:header, text:"hello3", comment:[]}
 var comment3 = {header:header, text:"hello2", comment:[comment]}
 var comment2 = {header:header, text:"hello", comment:[comment3]}
-$scope.comments = [comment2]
+$scope.comments = [comment2,comment3]
 	$scope.profiles = [{id:'1',img:'images/road.jpg',name:'Test',info:'Test',like:'',comments:$scope.comments}]
 
       $scope.loadProfile=function(p,hash){
