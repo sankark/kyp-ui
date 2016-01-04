@@ -11,6 +11,7 @@ li{
 	list-style-type: none;
 }
 
+
 .more{
 	float:right;
 	cursor: pointer;
@@ -46,4 +47,23 @@ body > .mdl-layout__container {
 	    margin-left: 5%;
 }
 
+.ta-resizer-handle-overlay{
+	height: inherit !important;
+}
 
+.ta-resizer-handle-info{
+	display:none !important;
+}
+
+  .iem-container{
+            list-style-type: none;
+            display: inline-block;
+            min-width: 28px;
+        }
+        .iem-container li{
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        .iem-container li:nth-child(odd){
+            background-color: #f0f0f0;
+        }

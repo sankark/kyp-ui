@@ -1,18 +1,27 @@
   <div class="basic_info mdl-card  mdl-cell mdl-cell--12-col">
+	  <div class="mdl-color-text--grey-600 item input">
+		  <span><h5>பெயர்</h5></span>
+		  <span><input type="text" ng-model="m1.text" ng-enter="select(0,m1)" ng-change="input(m1)"/></span>
+	  </div>
+	  <ul class="iem-container">
+	    <li  ng-repeat="word in words" ng-click="select($index,m1)">{{word}}</li>
+	  </ul>
+
 	  <div class="mdl-color-text--grey-600 item">
-		  <span><h5>hhh</h5></span>
+		  <span><h5>தொகுதி</h5></span>
+		   <span><input type="text" ng-model="m2.text" ng-enter="select(0,m2)" ng-change="input(m2)"/></span>
+	  </div>
+	  <ul class="iem-container">
+	    <li  ng-repeat="word in words" ng-click="select($index,m2)">{{word}}</li>
+	  </ul>
+
+
+	  <div class="mdl-color-text--grey-600 item">
+		  <span><h5>கட்சி</h5></span>
 		  <span><input type="text"/></span>
 	  </div>
 	  <div class="mdl-color-text--grey-600 item">
-		  <span><h5>hhh</h5></span>
-		  <span><input type="text"/></span>
-	  </div>
-	  <div class="mdl-color-text--grey-600 item">
-		  <span><h5>hhh</h5></span>
-		  <span><input type="text"/></span>
-	  </div>
-	  <div class="mdl-color-text--grey-600 item">
-		  <span><h5>hhh</h5></span>
+		  <span><h5>துறை சார்ந்த அனுபவம்</h5></span>
 		  <span><input type="text"/></span>
 	  </div>	  
  </div>
