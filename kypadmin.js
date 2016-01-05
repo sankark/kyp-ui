@@ -1,4 +1,4 @@
-var app = angular.module('KypAdmin',['ngRoute','ngResource','textAngular']);
+var app = angular.module('KypAdmin',['ngRoute','ngResource','textAngular','ngTextcomplete']);
 
 function MainController($rootScope, $scope, $location,IEM){
 
@@ -55,6 +55,10 @@ $scope.comments = [comment2]
 
         $scope.select = function(index,data){
             $scope.data = data;
+            if($scope.words[index] == null){
+               $scope.data.text +="\n";
+              return;
+            }
             $scope.data.text += $scope.words[index];
             $scope.words = "";
             $scope.data.pinyin = "";
@@ -118,3 +122,7 @@ app.directive('ngEnter', function () {
         });
     };
 });
+
+
+
+

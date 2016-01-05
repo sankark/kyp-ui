@@ -67,3 +67,9 @@ body > .mdl-layout__container {
         .iem-container li:nth-child(odd){
             background-color: #f0f0f0;
         }
+
+.dummyarea  textarea {
+	width:100%;
+	height:auto;
+	min-height: 10px;
+}
