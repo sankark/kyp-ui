@@ -3,7 +3,7 @@ var app = angular.module('KypAdmin', ['ngRoute', 'ngResource', 'textAngular', 'n
 function MainController($rootScope, $scope, $location, IEM) {
 
 
-    $scope.htmlContent = "";
+
     $scope.disabled = false;
 
     var header = {
